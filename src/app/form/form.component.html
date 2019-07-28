@@ -1,0 +1,26 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <form>
+            <input (keyup)="onKeyFirstName($event)" type="text" id="firsName" name="firsName" placeholder="firsName">
+            <input (keyup)="onKeyLastName($event)" type="text" id="lastName" name="lastName" placeholder="lastName">
+        </form>
+    </div>
+</div>
+
+<div class="table">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">FirsName</th>
+                <th scope="col">Lastname</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ firstNameValue }}</td>
+                <td>{{ lastNameValue }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
